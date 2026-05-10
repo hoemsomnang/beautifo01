@@ -1,0 +1,176 @@
+<template>
+  <main>
+    <!-- Page Banner -->
+    <div class="relative bg-[#f5f5f5] py-20 lg:py-28 overflow-hidden mb-16">
+      <div class="absolute inset-0 z-0">
+        <!-- Using a placeholder background to match the "soft premium background" description -->
+        <img src="https://images.unsplash.com/photo-1615397323145-8bc6808fb3ce?auto=format&fit=crop&q=80&w=2000" alt="Shop Banner" class="w-full h-full object-cover opacity-30 mix-blend-multiply blur-[2px]">
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <div class="text-[10px] uppercase font-bold tracking-[0.2em] text-gray-500 mb-4">
+          <router-link to="/" class="hover:text-pink-accent transition-colors">Beautifo</router-link> 
+          <span class="mx-2">&gt;</span> 
+          <span class="text-gray-900">Shop</span>
+        </div>
+        <h1 class="text-5xl font-bold text-gray-900 tracking-tight">Shop</h1>
+      </div>
+    </div>
+
+    <!-- Shop Content -->
+    <div class="max-w-7xl mx-auto px-6 pb-24">
+      <div class="flex flex-col lg:flex-row gap-10">
+        
+        <!-- Left Sidebar -->
+        <aside class="w-full lg:w-1/4">
+          <!-- Categories -->
+          <div class="mb-10">
+            <h4 class="font-bold text-gray-900 text-lg mb-6 relative pb-4">
+              Product Categories
+              <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-pink-accent"></span>
+            </h4>
+            <ul class="space-y-3 text-[13px] text-gray-600 font-medium">
+              <li class="flex justify-between items-center group cursor-pointer">
+                <span class="group-hover:text-pink-accent transition-colors"><span class="text-gray-400 mr-2 text-[10px] group-hover:text-pink-accent transition-colors"><i class="fas fa-chevron-right"></i></span> Applicators</span>
+                <span>(3)</span>
+              </li>
+              <li class="flex justify-between items-center group cursor-pointer text-pink-accent">
+                <span><span class="mr-2 text-[10px]"><i class="fas fa-chevron-right"></i></span> Body Oil</span>
+                <span>(8)</span>
+              </li>
+              <li class="flex justify-between items-center group cursor-pointer">
+                <span class="group-hover:text-pink-accent transition-colors"><span class="text-gray-400 mr-2 text-[10px] group-hover:text-pink-accent transition-colors"><i class="fas fa-chevron-right"></i></span> Cosmetic</span>
+                <span>(12)</span>
+              </li>
+              <li class="flex justify-between items-center group cursor-pointer">
+                <span class="group-hover:text-pink-accent transition-colors"><span class="text-gray-400 mr-2 text-[10px] group-hover:text-pink-accent transition-colors"><i class="fas fa-chevron-right"></i></span> Face Masks</span>
+                <span>(5)</span>
+              </li>
+              <li class="flex justify-between items-center group cursor-pointer">
+                <span class="group-hover:text-pink-accent transition-colors"><span class="text-gray-400 mr-2 text-[10px] group-hover:text-pink-accent transition-colors"><i class="fas fa-chevron-right"></i></span> Hair Care</span>
+                <span>(10)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Filter by Price -->
+          <div class="mb-10">
+            <h4 class="font-bold text-gray-900 text-lg mb-6 relative pb-4">
+              Filter by price
+              <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-pink-accent"></span>
+            </h4>
+            <!-- Mock Slider -->
+            <div class="relative h-1 bg-gray-200 rounded-full mb-6 mt-4">
+              <div class="absolute h-full bg-pink-accent w-3/4 left-0"></div>
+              <div class="absolute w-4 h-4 bg-white border-2 border-pink-accent rounded-full -top-1.5 -left-2 cursor-pointer shadow-sm"></div>
+              <div class="absolute w-4 h-4 bg-white border-2 border-pink-accent rounded-full -top-1.5 right-[25%] cursor-pointer shadow-sm"></div>
+            </div>
+            <div class="flex justify-between items-center text-[13px] text-gray-600 font-medium">
+              <button class="bg-gray-100 hover:bg-gray-200 px-4 py-1.5 rounded-sm transition-colors text-[11px] font-bold uppercase tracking-wider text-gray-800">Filter</button>
+              <span>Price: £70 — £140</span>
+            </div>
+          </div>
+
+          <!-- Average Rating -->
+          <div class="mb-10">
+            <h4 class="font-bold text-gray-900 text-lg mb-6 relative pb-4">
+              Average Rating
+              <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-pink-accent"></span>
+            </h4>
+            <ul class="space-y-3 text-[13px] text-gray-600">
+              <li class="flex items-center group cursor-pointer">
+                <input type="checkbox" class="mr-3 accent-pink-accent cursor-pointer">
+                <div class="flex text-[10px] text-pink-accent mr-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <span>(10)</span>
+              </li>
+              <li class="flex items-center group cursor-pointer">
+                <input type="checkbox" class="mr-3 accent-pink-accent cursor-pointer" checked>
+                <div class="flex text-[10px] text-pink-accent mr-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-300"></i></div>
+                <span>(14)</span>
+              </li>
+              <li class="flex items-center group cursor-pointer">
+                <input type="checkbox" class="mr-3 accent-pink-accent cursor-pointer">
+                <div class="flex text-[10px] text-pink-accent mr-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star text-gray-300"></i><i class="far fa-star text-gray-300"></i></div>
+                <span>(4)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product Tags -->
+          <div>
+            <h4 class="font-bold text-gray-900 text-lg mb-6 relative pb-4">
+              Product Tags
+              <span class="absolute bottom-0 left-0 w-8 h-0.5 bg-pink-accent"></span>
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <a href="#" class="border border-gray-200 text-gray-600 hover:border-pink-accent hover:text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Antiaging</a>
+              <a href="#" class="border border-gray-200 text-gray-600 hover:border-pink-accent hover:text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Beauty</a>
+              <a href="#" class="border border-pink-accent text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Healthy</a>
+              <a href="#" class="border border-gray-200 text-gray-600 hover:border-pink-accent hover:text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Makeup</a>
+              <a href="#" class="border border-gray-200 text-gray-600 hover:border-pink-accent hover:text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Organic</a>
+              <a href="#" class="border border-gray-200 text-gray-600 hover:border-pink-accent hover:text-pink-accent text-[11px] px-3 py-1.5 rounded-full transition-colors">Skincare</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Product Area -->
+        <div class="w-full lg:w-3/4">
+          <!-- Toolbar -->
+          <div class="flex flex-col sm:flex-row justify-between items-center mb-8 pb-4 border-b border-gray-100 gap-4">
+            <p class="text-[13px] text-gray-500 font-medium">Showing 1–12 of 15 results</p>
+            
+            <div class="flex items-center gap-6">
+              <div class="flex items-center gap-2 text-gray-400">
+                <button class="text-gray-900 hover:text-pink-accent transition-colors"><i class="fas fa-th-large text-lg"></i></button>
+                <button class="hover:text-gray-900 transition-colors"><i class="fas fa-list text-lg"></i></button>
+              </div>
+              
+              <div class="relative">
+                <select class="appearance-none border border-gray-200 text-gray-600 text-[13px] font-medium py-2 pl-4 pr-10 rounded-sm focus:outline-none focus:border-pink-accent cursor-pointer bg-transparent">
+                  <option>Default sorting</option>
+                  <option>Sort by popularity</option>
+                  <option>Sort by average rating</option>
+                  <option>Sort by latest</option>
+                  <option>Sort by price: low to high</option>
+                  <option>Sort by price: high to low</option>
+                </select>
+                <i class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-[10px] text-gray-400 pointer-events-none"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 mb-12">
+            <ProductCard v-for="p in shopProducts" :key="p.name" :product="p" />
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex justify-center items-center gap-2 mt-8">
+            <button class="w-10 h-10 rounded-full bg-pink-accent text-white font-bold text-[13px] flex items-center justify-center shadow-md">1</button>
+            <button class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-pink-accent hover:border-pink-accent font-bold text-[13px] flex items-center justify-center transition-colors">2</button>
+            <button class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-pink-accent hover:border-pink-accent flex items-center justify-center transition-colors">
+              <i class="fas fa-chevron-right text-[10px]"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</template>
+
+<script setup>
+import ProductCard from '../components/ProductCard.vue'
+
+// Generating 9 products to show a nice 3x3 grid
+const shopProducts = [
+  { name: "florence by mills Mind Glowing Peel", price: "112.00", oldPrice: "160.93", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-02.jpg" },
+  { name: "Serveware & Serving Dish Sets 75ml", price: "72.00", oldPrice: "120.28", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-10.jpg" },
+  { name: "SOS Hydra Refreshing Hydration Mask", price: "109.00", oldPrice: "156.16", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-12.jpg" },
+  { name: "Rational Household Labor Supply – JSTOR", price: "118.00", oldPrice: "148.33", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-14.jpg" },
+  { name: "Kiko Milano Smart Hydrating Foundation", price: "96.00", oldPrice: "121.54", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-13.jpg" },
+  { name: "Kerastase Discipline Bain Fluidealiste", price: "116.00", oldPrice: "167.53", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-15-1.jpg" },
+  { name: "Illuminating Serum Primer — By Mills", price: "90.00", oldPrice: "113.19", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-11.jpg" },
+  { name: "Hydrating Cream Mask 75ml tube", price: "84.00", oldPrice: "140.92", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-06.jpg" },
+  { name: "Daily Moisturizing Lotion for Dry Skin", price: "133.00", oldPrice: "191.65", image: "https://demo2.themelexus.com/beautifo/wp-content/uploads/2021/04/product-13.jpg" }
+]
+</script>

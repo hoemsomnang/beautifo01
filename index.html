@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautifo - Luxury Skincare &amp; Beauty</title>
+    <meta name="description" content="Beautifo – your premier online beauty store for luxury skincare, haircare and cosmetics. Discover dewy, natural-looking coverage and exclusive collections." />
+    <link rel="icon" href="/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'pink-accent': '#e08383',
+              'premium-dark': '#0a0a0a',
+              'premium-light': '#fafafa',
+              'rose-gold': '#d4af37', // actually gold, but let's use a nice accent
+            },
+            fontFamily: {
+              sans: ['Outfit', 'Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.05)',
+              'premium': '0 20px 40px -15px rgba(0,0,0,0.05)',
+              'premium-hover': '0 30px 60px -15px rgba(0,0,0,0.1)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
